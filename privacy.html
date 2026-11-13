@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BunWhisper Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --link: #0969da; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --link: #4493f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 1.8rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>BunWhisper Privacy Policy</h1>
+  <p class="lead">Effective November 13, 2026</p>
+
+  <p>BunWhisper is a personal Mac app for recording meetings and transcribing them. It is used by its developer and a
+    few people they know personally. This policy explains what it does with data, in particular data from Google.</p>
+
+  <h2>Google user data BunWhisper accesses</h2>
+  <p>Signing in to Google is optional. When a user signs in on a Mac, BunWhisper asks for read-only access:</p>
+  <ul>
+    <li><code>calendar.calendarlist.readonly</code>: the list of the account's calendars;</li>
+    <li><code>calendar.events.readonly</code>: the events in those calendars (title, times, location, description,
+      organizer, attendees' names and email addresses, response status, and video-call links);</li>
+    <li><code>openid</code> and <code>email</code>: the account's email address, to show which account is signed in.</li>
+  </ul>
+  <p>BunWhisper never creates, changes or deletes calendar events.</p>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>To find the meeting a recording belongs to (the event that overlaps the recording), so that the recording and its
+      transcript can be named after the meeting.</li>
+    <li>To start or offer a recording when a call that is in the calendar begins (for example a Zoom or Google Meet
+      link in the event).</li>
+    <li>To offer the attendees' names when the user names the speakers of a transcript.</li>
+  </ul>
+  <p>The data is not used for advertising, not sold, and not used to build profiles. No person reads it other than the
+    user.</p>
+
+  <h2>Where the data goes and how it is stored</h2>
+  <ul>
+    <li>Calendar events are read directly from Google by the app on the user's Mac and kept in the app's memory.</li>
+    <li>The sign-in (OAuth tokens) is stored on that Mac, in a file only the user's macOS account can read.</li>
+    <li>The meeting's title and attendees may be written into the recording's transcript files on the user's Mac.</li>
+    <li>To suggest who spoke, the attendees' names and email addresses are sent together with the transcript to the
+      user's own transcription computers on the user's private network. They are not sent to any third party.</li>
+    <li>If the user turns on the Notion import, transcripts (which may contain the meeting title and speaker names) are
+      saved in the user's own Notion workspace.</li>
+  </ul>
+  <p>BunWhisper's use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.</p>
+
+  <h2>Removing access and deleting data</h2>
+  <ul>
+    <li>"Sign Out" in BunWhisper's settings deletes the stored sign-in from the Mac and asks Google to revoke it.</li>
+    <li>Access can also be removed at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Recordings and transcripts are ordinary files on the user's Mac (and pages in their Notion workspace) that the
+      user can delete.</li>
+  </ul>
+
+  <h2>Changes and contact</h2>
+  <p>Changes to this policy are published on this page. Questions:
+    <a href="https://github.com/yf225/bunwhisper-site/issues">GitHub issues</a>.</p>
+
+  <h2>中文摘要</h2>
+  <p>登录 Google 是可选的；只读，不会改动日历。读到的日历（日程标题、时间、参会人名字和邮箱、会议链接）只在你的 Mac 上用来：找录音对应的会、
+    给录音起会议名、会议开始时提示录音、给说话人起名时提供参会人名字。参会人名字会随文字稿发到你自己的转写电脑（你的私有网络），
+    开了 Notion 导入的话文字稿会存进你自己的 Notion。不卖、不做广告、不给第三方。登录凭证存在这台 Mac 上只有你能读的文件里；
+    在 BunWhisper 里点“退出登录”或在 myaccount.google.com/permissions 可以随时撤销。</p>
+
+  <footer><a href="./">BunWhisper</a></footer>
+</main>
+</body>
+</html>
